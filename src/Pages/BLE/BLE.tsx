@@ -15,7 +15,6 @@ import type { TabsProps } from 'antd';
 import Graph from '../../Components/Graph';
 
 
-
 const formatter: StatisticProps['formatter'] = (value) => (
     <CountUp end={value as number} separator="," />
 );
