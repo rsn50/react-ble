@@ -426,7 +426,7 @@ const BLE: React.FC<IBleProps> = ({
                         <>
                             <Space wrap={true} size="large">
                                 <Button style={{ backgroundColor: "#83BF8D" }} icon={<DownloadOutlined />} type="primary" size={'large'} onClick={downloadFile}>Download Bin File</Button>
-                                <Button style={{ backgroundColor: "#83BF8D" }} icon={<DownloadOutlined />} type="primary" size={'large'} onClick={downloadOnDemand}>Download on demand File</Button>
+                                {/* <Button style={{ backgroundColor: "#83BF8D" }} icon={<DownloadOutlined />} type="primary" size={'large'} onClick={downloadOnDemand}>Download on demand File</Button> */}
                                 <Button style={{ backgroundColor: "#83BF8D" }} icon={<DownloadOutlined />} type="primary" size={'large'} onClick={saveGraph}>Save Graph</Button>
                             </Space>
 
