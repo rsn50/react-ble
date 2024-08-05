@@ -1,2 +1,1 @@
-# react-ble
-REact BLE
+# BLE with React by Reniz Shah
