@@ -1,24 +1,23 @@
-import { LineChart } from '@mui/x-charts/LineChart';
+import Plot from 'react-plotly.js';
+
 const Graph: React.FC<any> = ({
     x,
     y
 }) => {
-    console.log("Graph");
-    
+
     return (
         <>
-            <LineChart
-                xAxis={[{ data: x, label: "Ticks" }]}
-                series={[
+            <Plot
+                data={[
                     {
-                        data: y,
-                        showMark: false,
-                    },
+                        x: x,
+                        y: y,
+                        type: 'scatter',
+                        mode: 'lines',
+                        marker: { color: '#83BF8D' },
+                    }
                 ]}
-                height={600}
-                width={900}
-                margin={{ left: 30, right: 30, top: 30, bottom: 60 }}
-                grid={{ vertical: true, horizontal: true }}
+                layout={{ width: 900, height: 600}}
             />
         </>
     )
