@@ -1,5 +1,5 @@
-import Plot from 'react-plotly.js';
-
+import { LineChart } from '@mui/x-charts/LineChart';
+import './Graph.css'
 const Graph: React.FC<any> = ({
     x,
     y
@@ -7,17 +7,19 @@ const Graph: React.FC<any> = ({
 
     return (
         <>
-            <Plot
-                data={[
+            <LineChart
+                className='Graph'
+                xAxis={[{ data: x, label: "Ticks" }]}
+                series={[
                     {
-                        x: x,
-                        y: y,
-                        type: 'scatter',
-                        mode: 'lines',
-                        marker: { color: '#83BF8D' },
-                    }
+                        data: y,
+                        showMark: false,
+                    },
                 ]}
-                layout={{ width: 900, height: 600}}
+                height={600}
+                width={900}
+                margin={{ left: 30, right: 30, top: 30, bottom: 60 }}
+                grid={{ vertical: true, horizontal: true }}
             />
         </>
     )
