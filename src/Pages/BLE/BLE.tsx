@@ -430,7 +430,7 @@ const BLE: React.FC<IBleProps> = ({
                                 <Button style={{ backgroundColor: "#83BF8D" }} icon={<DownloadOutlined />} type="primary" size={'large'} onClick={saveGraph}>Save Graph</Button>
                             </Space>
 
-                            <div id='chart-container' style={{ width: '90vw' }}>
+                            <div id='chart-container' style={{ width:'80vw' }}>
                                 <Space direction="vertical" size="middle" style={{ width: '1000px' }}>
 
                                     <br /><br />

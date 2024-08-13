@@ -4,7 +4,6 @@ const Graph: React.FC<any> = ({
     x,
     y
 }) => {
-    console.log("Graph");
 
     return (
         <>
