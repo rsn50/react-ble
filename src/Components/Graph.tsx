@@ -1,13 +1,15 @@
 import { LineChart } from '@mui/x-charts/LineChart';
+import './Graph.css'
 const Graph: React.FC<any> = ({
     x,
     y
 }) => {
     console.log("Graph");
-    
+
     return (
         <>
             <LineChart
+                className='Graph'
                 xAxis={[{ data: x, label: "Ticks" }]}
                 series={[
                     {
