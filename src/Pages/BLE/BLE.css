@@ -52,3 +52,10 @@ body {
   width: 1000px;
 
 }
+
+.data-container{
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  width: 100%;
+}

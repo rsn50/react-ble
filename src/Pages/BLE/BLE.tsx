@@ -430,7 +430,7 @@ const BLE: React.FC<IBleProps> = ({
                                 <Button style={{ backgroundColor: "#83BF8D" }} icon={<DownloadOutlined />} type="primary" size={'large'} onClick={saveGraph}>Save Graph</Button>
                             </Space>
 
-                            <div id='chart-container' style={{ width:'80vw' }}>
+                            <div id='chart-container' style={{ width: '80vw' }}>
                                 <Space direction="vertical" size="middle" style={{ width: '1000px' }}>
 
                                     <br /><br />
@@ -438,7 +438,12 @@ const BLE: React.FC<IBleProps> = ({
                                         <Card className="card-header" title={"Graph for Subject : " + formData?.subjectId} >
 
                                             <div className="card-container">
-                                                <Statistic title="Your Blood Glucose Level" value={(bglData["blood_glucose_level_method2"]).toFixed(2)} formatter={formatter} />
+                                                <Statistic title={<h2>Blood Glucose mg/dl</h2>} value={(bglData["blood_glucose_level_method2"]).toFixed(2)} formatter={formatter} />
+                                                <div className="data-container">
+                                                    <Statistic title={<h2>Glucose utilise rate mg/min</h2>} value={(graphData['payload']['gluocose_data']['Glucose_utilise_mg_per_min']).toFixed(2)} formatter={formatter} />
+                                                    <Statistic title={<h2>% calories from glucose</h2>} value={(graphData['payload']['gluocose_data']['percentage_calories_from_glucose']).toFixed(2)} formatter={formatter} />
+                                                    <Statistic title={<h2>EE cal per min</h2>} value={(graphData['payload']['gluocose_data']['EE_cal_per_min']).toFixed(2)} formatter={formatter} />
+                                                </div>
                                                 <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
                                             </div>
                                         </Card>
