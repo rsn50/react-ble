@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-ble/static/css/main.cc27321b.css",
-    "main.js": "/react-ble/static/js/main.16a0ca0a.js",
+    "main.js": "/react-ble/static/js/main.061ce702.js",
     "index.html": "/react-ble/index.html",
     "main.cc27321b.css.map": "/react-ble/static/css/main.cc27321b.css.map",
-    "main.16a0ca0a.js.map": "/react-ble/static/js/main.16a0ca0a.js.map"
+    "main.061ce702.js.map": "/react-ble/static/js/main.061ce702.js.map"
   },
   "entrypoints": [
     "static/css/main.cc27321b.css",
-    "static/js/main.16a0ca0a.js"
+    "static/js/main.061ce702.js"
   ]
 }
